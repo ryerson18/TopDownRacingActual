@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Resources\mixkit-8-bit-bomb-explosion-2811.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-02.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

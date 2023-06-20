@@ -510,6 +510,10 @@ namespace TopDownRacing
                     car1Check3 = false;
                     car1Check4 = false;
                     car1redCheck = false;
+
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
+
+                    player.Play();
                 }
                 //car 2
                 if (check1.IntersectsWith(Car2))
@@ -546,6 +550,10 @@ namespace TopDownRacing
                     car2Check3 = false;
                     car2Check4 = false;
                     car2redCheck = false;
+
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
+
+                    player.Play();
                 }
 
                 //check to see if players have done all the laps for track 1
@@ -717,6 +725,10 @@ namespace TopDownRacing
                     track2car1Check14 = false;
                     track2car1Check15 = false;
                     track2car1Check16 = false;
+
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
+
+                    player.Play();
                 }
 
                 //car 2
@@ -828,6 +840,10 @@ namespace TopDownRacing
                     track2car2Check14 = false;
                     track2car2Check15 = false;
                     track2car2Check16 = false;
+
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.beep);
+
+                    player.Play();
                 }
 
 
