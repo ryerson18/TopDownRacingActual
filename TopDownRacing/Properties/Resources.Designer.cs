@@ -63,6 +63,15 @@ namespace TopDownRacing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream CarHitWall {
+            get {
+                return ResourceManager.GetStream("CarHitWall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream nascar_Sound {
             get {
                 return ResourceManager.GetStream("nascar_Sound", resourceCulture);

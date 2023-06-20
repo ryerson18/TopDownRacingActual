@@ -33,6 +33,7 @@ namespace TopDownRacing
 
         // list of track limits
         List<Rectangle> tracklimitsList = new List<Rectangle>();
+        
 
         // track 1
         // check ponits 
@@ -208,25 +209,25 @@ namespace TopDownRacing
             //track 2
             if(track == 2)
             {
-                tracklimitsList.Add(new Rectangle(0, 215, 500, 8));
-                tracklimitsList.Add(new Rectangle(0, 0, 9, 750));
-                tracklimitsList.Add(new Rectangle(0, 208, 83, 30));
-                tracklimitsList.Add(new Rectangle(973, 0, 984, 750));
-                tracklimitsList.Add(new Rectangle(0, 678, 985, 749));
-                tracklimitsList.Add(new Rectangle(0, 0, 985, 28));
-                tracklimitsList.Add(new Rectangle(703, 175, 155, 360));
-                tracklimitsList.Add(new Rectangle(103, 380, 145, 180));
-                tracklimitsList.Add(new Rectangle(0, 0, 50, 60));
-                tracklimitsList.Add(new Rectangle(0, 0, 25, 225));
-                tracklimitsList.Add(new Rectangle(25, 175, 18, 40));
-                tracklimitsList.Add(new Rectangle(338, 264, 230, 180));
-                tracklimitsList.Add(new Rectangle(320, 223, 180, 45));
-                tracklimitsList.Add(new Rectangle(220, 135, 575, 15));
-                tracklimitsList.Add(new Rectangle(676, 145, 150, 38));
-                tracklimitsList.Add(new Rectangle(949, 20, 40, 40));
-                tracklimitsList.Add(new Rectangle(195, 600, 600, 10));
-                tracklimitsList.Add(new Rectangle(130, 560, 150, 40));
-                tracklimitsList.Add(new Rectangle(684, 550, 155, 40));
+                tracklimitsList.Add(new Rectangle(0, 217, 500, 8));
+                tracklimitsList.Add(new Rectangle(-5, 0, 9, 750));
+                tracklimitsList.Add(new Rectangle(0, 210, 80, 20));
+                tracklimitsList.Add(new Rectangle(978, 0, 984, 750));
+                tracklimitsList.Add(new Rectangle(0, 683, 985, 749));
+                tracklimitsList.Add(new Rectangle(0, -5, 985, 28));
+                tracklimitsList.Add(new Rectangle(713, 185, 135, 360));
+                tracklimitsList.Add(new Rectangle(113, 380, 125, 180));
+                tracklimitsList.Add(new Rectangle(5, 0, 30, 60));
+                tracklimitsList.Add(new Rectangle(-10, 0, 25, 225));
+                tracklimitsList.Add(new Rectangle(10, 175, 18, 40));
+                tracklimitsList.Add(new Rectangle(350, 270, 210, 160));
+                tracklimitsList.Add(new Rectangle(340, 227, 160, 35));
+                tracklimitsList.Add(new Rectangle(280, 137, 515, 10));
+                tracklimitsList.Add(new Rectangle(690, 149, 130, 38));
+                tracklimitsList.Add(new Rectangle(958, 20, 40, 40));
+                tracklimitsList.Add(new Rectangle(195, 603, 600, 3));
+                tracklimitsList.Add(new Rectangle(150, 555, 110, 40));
+                tracklimitsList.Add(new Rectangle(695, 550, 135, 40));
                 tracklimitsList.Add(new Rectangle(600, 590, 210, 10));
             }
 
@@ -427,8 +428,17 @@ namespace TopDownRacing
                 carAngle2 += 8;
             }
 
+            // if cars hit each others
+            if (Car1.IntersectsWith(Car2))
+            {
+                carSpeed1 = 3;
+            }
+            if (Car2.IntersectsWith(Car1))
+            {
+                carSpeed2 = 3;
+            }
             // track one stuff
-            if (track == 1)
+            else if (track == 1)
             {
                 bool offTrack1 = false;
                 bool offTrack2 = false;
@@ -563,7 +573,7 @@ namespace TopDownRacing
             }
 
             // track two stuff
-            if (track == 2)
+            else if(track == 2)
             {
                 bool offTrack3 = false;
                 bool offTrack4 = false;
@@ -973,7 +983,7 @@ namespace TopDownRacing
                         car1Lap.Visible = false;
                         car2Lap.Visible = false;
 
-                        Winlabel.Text = "Player one is the race winner";
+                        Winlabel.Text = "Player two is the race winner";
                         Winlabel.Text += "\n\n Press space for next track";
                     }
 
@@ -984,7 +994,7 @@ namespace TopDownRacing
                         track2car2Lap.Visible = false;
 
                         Winlabel.Text = "Player one is the race winner";
-                        Winlabel.Text += "\n\n Press space to play again or ESC to exit";
+                        Winlabel.Text += "\n\n Press ESC to exit";
                     }
 
                     if (car2Track2 == 3)
@@ -993,7 +1003,7 @@ namespace TopDownRacing
                         track2car1Lap.Visible = false;
                         track2car2Lap.Visible = false;
                         Winlabel.Text = "Player two is the race winner";
-                        Winlabel.Text += "\n\n Press space to play again or ESC to exit";
+                        Winlabel.Text += "\n\n Press ESC to exit";
 
                     }
                 }
