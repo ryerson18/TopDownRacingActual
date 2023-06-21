@@ -98,7 +98,7 @@
             this.Winlabel.BackColor = System.Drawing.Color.Transparent;
             this.Winlabel.Font = new System.Drawing.Font("Sitka Small", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Winlabel.ForeColor = System.Drawing.Color.Black;
-            this.Winlabel.Location = new System.Drawing.Point(12, 171);
+            this.Winlabel.Location = new System.Drawing.Point(12, 9);
             this.Winlabel.Name = "Winlabel";
             this.Winlabel.Size = new System.Drawing.Size(976, 386);
             this.Winlabel.TabIndex = 4;
@@ -110,9 +110,6 @@
             this.track2car1Lap.BackColor = System.Drawing.Color.Transparent;
             this.track2car1Lap.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.track2car1Lap.ForeColor = System.Drawing.Color.Red;
-
-            //this.track2car1Lap.Location = new System.Drawing.Point(779, 166);
-
             this.track2car1Lap.Location = new System.Drawing.Point(779, 202);
             this.track2car1Lap.Name = "track2car1Lap";
             this.track2car1Lap.Size = new System.Drawing.Size(36, 66);
@@ -139,13 +136,13 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 788);
-            this.Controls.Add(this.Winlabel);
-            this.Controls.Add(this.track2car2Lap);
             this.Controls.Add(this.track2car1Lap);
+            this.Controls.Add(this.track2car2Lap);
             this.Controls.Add(this.car2Lap);
             this.Controls.Add(this.car1Lap);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.SubtitleLabel);
+            this.Controls.Add(this.Winlabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

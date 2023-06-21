@@ -127,4 +127,7 @@
   <data name="nascar_Sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nascar Sound-[AudioTrimmer.com].wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cheering1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

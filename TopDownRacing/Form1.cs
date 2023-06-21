@@ -562,6 +562,10 @@ namespace TopDownRacing
                     Game_Timer.Stop();
                     state = "over";
 
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.Win);
+
+                    player.Play();
+
                     if (track == 1)
                     {
                         track = 2;
@@ -572,6 +576,10 @@ namespace TopDownRacing
                 {
                     Game_Timer.Stop();
                     state = "over";
+
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.Win);
+
+                    player.Play();
 
                     if (track == 1)
                     {
@@ -852,11 +860,17 @@ namespace TopDownRacing
                 {
                     Game_Timer.Stop();
                     state = "over";
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.Win);
+
+                    player.Play();
                 }
                 if (car2Track2 == 3)
                 {
                     Game_Timer.Stop();
                     state = "over";
+                    SoundPlayer player = new SoundPlayer(Properties.Resources.Win);
+
+                    player.Play();
 
                 }
             }
